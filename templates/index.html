@@ -1,69 +1,1015 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>PRESENX | AI POWERED ATTENDANCE SYSTEM</title>
-    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
-    <link rel="icon" type="image/png" href="{{url_for('static',filename='img/logo.png')}}">
+
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="icon"
+        type="image/png"
+        href="{{ url_for('static', filename='img/logo.png') }}">
 </head>
+
 <body>
+
+    <!-- ================= NAVBAR ================= -->
+
     <nav class="navbar">
 
         <div class="logo">
-            <img src="{{url_for('static',filename='img/logo.png')}}" style="height: 32px;" alt="PRESENX Logo">
-            <div class="logo-text">PRESENX</div>
+
+            <img
+                src="{{ url_for('static', filename='img/logo.png') }}"
+                alt="PRESENX Logo"
+                style="height: 32px;">
+
+            <div class="logo-text">
+                PRESENX
+            </div>
+
         </div>
 
         <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#features">Features</a>
-            <a href="journey">Journey</a>
-            <a href="tech">Tech Stack</a>
-        </div>
 
-        <div class="nav-cta">
-            <a href="https://presenx.streamlit.app/" class="btn-pill">
-                Start AI Attendance
-                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"></path></svg>
+            <a href="#">
+                Home
+            </a>
+
+            <a href="#features">
+                Features
+            </a>
+
+            <a href="#journey">
+                Journey
+            </a>
+
+            <a href="#tech">
+                Tech Stack
             </a>
 
         </div>
 
-        <header class="hero">
-            <div class="badge">
-                Welcome to PRESENX
-            </div>
-            <h1>AI Powered <br> Attendance <span>System</span></h1>
+        <div class="nav-cta">
 
-            <p>Revolutionizing the classroom with next-gen computer vision and voice biometrics. Trusted by educators for speed, accuracy, and security.</p>
+            <a
+                href="https://presenx.streamlit.app/"
+                class="btn-pill">
 
-            <div class="hero-actions">
-                <a href="https://presenx.streamlit.app/" class="btn-cta">
-                    Start AI Attendance
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"></path></svg>
-                </a>
+                Start AI Attendance
 
-                <a href="journey" class="link-actions">Explore Journey</a>
-            </div>
+                <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2">
 
-            <div class="floating-card card-left">
-                <div class="card-img">
-                    <img src="{{url_for('static',filename='img/teacher-flow-5.2-photo-attendance.png')}}" alt="landing img 1">
-                </div>
-            </div>
+                    <path d="M9 5l7 7-7 7" />
 
-            <div class="floating-card card-right">
-                <div class="card-img">
-                    <img src="{{url_for('static',filename='img/landing-page.png')}}" alt="landing img 2">
-                </div>
-            </div>
-        </header>
-        
+                </svg>
 
+            </a>
 
-
+        </div>
 
     </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <header class="hero">
+
+        <div class="badge">
+            Welcome to PRESENX
+        </div>
+
+        <h1>
+            AI Powered<br>
+            Attendance <span>System</span>
+        </h1>
+
+        <p>
+            Revolutionizing the classroom with next-gen computer vision
+            and voice biometrics. Trusted by educators for speed,
+            accuracy, and security.
+        </p>
+
+        <div class="hero-actions">
+
+            <a
+                href="https://presenx.streamlit.app/"
+                class="btn-cta">
+
+                Start AI Attendance
+
+                <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3">
+
+                    <path d="M9 5l7 7-7 7" />
+
+                </svg>
+
+            </a>
+
+            <a
+                href="#journey"
+                class="link-action">
+
+                Explore Journey
+
+            </a>
+
+        </div>
+
+
+        <!-- LEFT FLOATING CARD -->
+
+        <div class="floating-card card-left">
+
+            <div class="card-img">
+
+                <img
+                    src="{{ url_for('static', filename='img/teacher-flow-5.2-photo-attendance.png') }}"
+                    alt="PRESENX AI Attendance">
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT FLOATING CARD -->
+
+        <div class="floating-card card-right">
+
+            <div class="card-img">
+
+                <img
+                    src="{{ url_for('static', filename='img/landing-page.png') }}"
+                    alt="PRESENX Landing Page">
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= FEATURES ================= -->
+
+    <section id="features" class="features">
+
+        <h2>
+            Innovative Features
+        </h2>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+
+                <div class="f-icon-box">
+                    📸
+                </div>
+
+                <h3>
+                    AI Face Recognition
+                </h3>
+
+                <p>
+                    Automatically recognize students using
+                    computer vision and face recognition
+                    technology.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="f-icon-box">
+                    🎙️
+                </div>
+
+                <h3>
+                    Voice Attendance
+                </h3>
+
+                <p>
+                    Students can use voice-based identification
+                    for a fast and convenient attendance process.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="f-icon-box">
+                    📱
+                </div>
+
+                <h3>
+                    QR Based Enrollment
+                </h3>
+
+                <p>
+                    Students can join subjects using QR codes
+                    and simplify the enrollment process.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TEACHER JOURNEY ================= -->
+
+    <section id="journey" class="teacher-flow">
+
+        <div class="flow-container">
+
+            <div
+                class="section-tag"
+                style="text-align: center; display: block; margin-bottom: 40px;">
+
+                — Workflow —
+
+            </div>
+
+            <h2
+                style="text-align: center; font-size: 3.5rem; margin-bottom: 80px;">
+
+                The Teacher's Journey
+
+            </h2>
+
+
+            <!-- STEP 01 -->
+
+            <div class="flow-step">
+
+                <div class="flow-content">
+
+                    <span class="step-badge">
+                        Step 01
+                    </span>
+
+                    <h3>
+                        Secure Login
+                    </h3>
+
+                    <p>
+                        Start your session with the
+                        PRESENX authentication system.
+                    </p>
+
+                </div>
+
+                <div class="flow-image">
+
+                    <img
+                        src="{{ url_for('static', filename='img/teacher.png') }}"
+                        alt="PRESENX Login">
+
+                </div>
+
+            </div>
+
+
+            <!-- STEP 02 -->
+
+            <div class="flow-step">
+
+                <div class="flow-content">
+
+                    <span class="step-badge">
+                        Step 02
+                    </span>
+
+                    <h3>
+                        Interactive Dashboard
+                    </h3>
+
+                    <p>
+                        Manage subjects, attendance records,
+                        and students from a unified dashboard.
+                    </p>
+
+                </div>
+
+                <div class="flow-image">
+
+                    <img
+                        src="{{ url_for('static', filename='img/teacher-flow-2-dashboard.png') }}"
+                        alt="PRESENX Dashboard">
+
+                </div>
+
+            </div>
+
+
+            <!-- STEP 03 -->
+
+            <div class="flow-step">
+
+                <div class="flow-content">
+
+                    <span class="step-badge">
+                        Step 03
+                    </span>
+
+                    <h3>
+                        Course Management
+                    </h3>
+
+                    <p>
+                        Create and manage subjects for
+                        your classroom attendance.
+                    </p>
+
+                </div>
+
+                <div class="flow-image">
+
+                    <img
+                        src="{{ url_for('static', filename='img/teacher-flow-3-create-course.png') }}"
+                        alt="Create Course">
+
+                </div>
+
+            </div>
+
+
+            <!-- STEP 04 -->
+
+            <div class="flow-step">
+
+                <div class="flow-content">
+
+                    <span class="step-badge">
+                        Step 04
+                    </span>
+
+                    <h3>
+                        FaceID Attendance
+                    </h3>
+
+                    <p>
+                        Use computer vision to identify
+                        students and automatically mark attendance.
+                    </p>
+
+                </div>
+
+                <div class="flow-image">
+
+                    <img
+                        src="{{ url_for('static', filename='img/teacher-flow-5.2-photo-attendance.png') }}"
+                        alt="FaceID Attendance">
+
+                </div>
+
+            </div>
+
+
+            <!-- STEP 05 -->
+
+            <div class="flow-step">
+
+                <div class="flow-content">
+
+                    <span class="step-badge">
+                        Step 05
+                    </span>
+
+                    <h3>
+                        Voice ID Attendance
+                    </h3>
+
+                    <p>
+                        Use voice-based identification
+                        for an alternative attendance workflow.
+                    </p>
+
+                </div>
+
+                <div class="flow-image">
+
+                    <img
+                        src="{{ url_for('static', filename='img/teacher-flow-5.1-voice-attendance.png.png') }}"
+                        alt="Voice Attendance">
+
+                </div>
+
+            </div>
+
+
+            <!-- STEP 06 -->
+
+            <div class="flow-step">
+
+                <div class="flow-content">
+
+                    <span class="step-badge">
+                        Step 06
+                    </span>
+
+                    <h3>
+                        Attendance Records
+                    </h3>
+
+                    <p>
+                        Review and manage previously recorded
+                        attendance data.
+                    </p>
+
+                </div>
+
+                <div class="flow-image">
+
+                    <img
+                        src="{{ url_for('static', filename='img/teacher-flow-5-see-stored-records.png') }}"
+                        alt="Attendance Records">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TECH STACK ================= -->
+
+    <section id="tech" class="tech-stack">
+
+        <div class="section-tag">
+            — Our Backend —
+        </div>
+
+        <h2>
+            Advanced Tech Stack
+        </h2>
+
+        <div class="tech-grid">
+
+
+            <div class="tech-item">
+
+                <div class="tech-card">
+
+                    <div class="t-icon">
+                        ⚡
+                    </div>
+
+                    <div class="tech-info">
+
+                        <h4>
+                            Streamlit & Flask
+                        </h4>
+
+                        <p>
+                            Python-based application architecture
+                            for the PRESENX system.
+                        </p>
+
+                    </div>
+
+                    <span class="tech-tag">
+                        Platform
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="tech-item">
+
+                <div class="tech-card">
+
+                    <div class="t-icon">
+                        👁️
+                    </div>
+
+                    <div class="tech-info">
+
+                        <h4>
+                            Face Recognition
+                        </h4>
+
+                        <p>
+                            Dlib and face recognition models
+                            power the computer vision pipeline.
+                        </p>
+
+                    </div>
+
+                    <span class="tech-tag">
+                        Vision AI
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="tech-item">
+
+                <div class="tech-card">
+
+                    <div class="t-icon">
+                        🎙️
+                    </div>
+
+                    <div class="tech-info">
+
+                        <h4>
+                            Voice AI
+                        </h4>
+
+                        <p>
+                            Voice-based identification for
+                            alternative attendance workflows.
+                        </p>
+
+                    </div>
+
+                    <span class="tech-tag">
+                        Audio AI
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="tech-item">
+
+                <div class="tech-card">
+
+                    <div class="t-icon">
+                        ☁️
+                    </div>
+
+                    <div class="tech-info">
+
+                        <h4>
+                            Supabase
+                        </h4>
+
+                        <p>
+                            PostgreSQL database infrastructure
+                            for application data.
+                        </p>
+
+                    </div>
+
+                    <span class="tech-tag">
+                        Database
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= STUDENT JOURNEY ================= -->
+
+    <section
+        id="student-journey"
+        class="teacher-flow"
+        style="background: white;">
+
+        <div class="flow-container">
+
+            <div
+                class="section-tag"
+                style="text-align: center; display: block; margin-bottom: 40px;">
+
+                — Workflow —
+
+            </div>
+
+            <h2
+                style="text-align: center; font-size: 3.5rem; margin-bottom: 80px;">
+
+                The Student's Journey
+
+            </h2>
+
+
+            <!-- PHASE 01 -->
+
+            <div class="flow-step">
+
+                <div class="flow-content">
+
+                    <span class="step-badge">
+                        Phase 01
+                    </span>
+
+                    <h3>
+                        Student Enrollment
+                    </h3>
+
+                    <p>
+                        Students can join their subject
+                        and begin the attendance process.
+                    </p>
+
+                </div>
+
+                <div class="flow-image">
+
+                    <img
+                        src="{{ url_for('static', filename='img/student-flow-1-login.png') }}"
+                        alt="Student Enrollment">
+
+                </div>
+
+            </div>
+
+
+            <!-- PHASE 02 -->
+
+            <div class="flow-step">
+
+                <div class="flow-content">
+
+                    <span class="step-badge">
+                        Phase 02
+                    </span>
+
+                    <h3>
+                        Biometric Registration
+                    </h3>
+
+                    <p>
+                        Register the student's biometric
+                        information for future attendance.
+                    </p>
+
+                </div>
+
+                <div class="flow-image">
+
+                    <img
+                        src="{{ url_for('static', filename='img/student-flow-2-enroll.png') }}"
+                        alt="Biometric Registration">
+
+                </div>
+
+            </div>
+
+
+            <!-- PHASE 03 -->
+
+            <div class="flow-step">
+
+                <div class="flow-content">
+
+                    <span class="step-badge">
+                        Phase 03
+                    </span>
+
+                    <h3>
+                        Personal Dashboard
+                    </h3>
+
+                    <p>
+                        Students can view their attendance
+                        information through their dashboard.
+                    </p>
+
+                </div>
+
+                <div class="flow-image">
+
+                    <img
+                        src="{{ url_for('static', filename='img/student-flow-3-dashboard.png') }}"
+                        alt="Student Dashboard">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="purple-section">
+
+        <h2>
+            Ready to upgrade your classroom?
+        </h2>
+
+        <p>
+            Experience the next generation of
+            AI powered attendance with PRESENX.
+        </p>
+
+        <a
+            href="https://presenx.streamlit.app/"
+            class="btn-white">
+
+            Start AI Attendance Now
+
+        </a>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="main-footer">
+
+        <div class="footer-grid">
+
+
+            <!-- FOOTER BRAND -->
+
+            <div class="footer-brand">
+
+                <div class="logo">
+
+                    <img
+                        src="{{ url_for('static', filename='img/logo.png') }}"
+                        alt="PRESENX Logo">
+
+                    <div class="logo-text">
+                        PRESENX
+                    </div>
+
+                </div>
+
+                <p>
+                    The next generation of classroom
+                    attendance powered by AI.
+                </p>
+
+
+                <!-- SOCIAL LINKS -->
+
+                <div class="social-links">
+
+                    <!-- GitHub -->
+
+                    <a
+                        href="https://github.com/piyushhh-glitch"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            width="22"
+                            height="22"
+                            fill="currentColor">
+
+                            <path
+                                d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56
+                                0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.33-1.29-1.69-1.29-1.69
+                                -1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.67 1.25
+                                3.32.96.1-.74.4-1.25.73-1.54-2.56-.29-5.26-1.28-5.26-5.69
+                                0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06
+                                0 0 .96-.31 3.15 1.18A10.9 10.9 0 0 1 12 6.84c.97.01
+                                1.94.13 2.85.38 2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23
+                                2.77.11 3.06.73.81 1.18 1.84 1.18 3.1 0 4.42-2.7 5.39-5.27
+                                5.68.41.35.78 1.04.78 2.1 0 1.52-.01 2.75-.01 3.12
+                                0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65
+                                18.35.5 12 .5z" />
+
+                        </svg>
+
+                    </a>
+
+
+                    <!-- LinkedIn -->
+
+                    <a
+                        href="https://www.linkedin.com/in/piyushhh-glitchh/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            width="22"
+                            height="22"
+                            fill="currentColor">
+
+                            <path
+                                d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04
+                                -1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.99h3.42v1.56h.05
+                                c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29z
+                                M5.32 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12z
+                                M7.1 20.45H3.54V8.99H7.1v11.46z" />
+
+                        </svg>
+
+                    </a>
+
+
+                    <!-- Instagram -->
+
+                    <a
+                        href="https://www.instagram.com/piyush_.16/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            width="22"
+                            height="22"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2">
+
+                            <rect
+                                x="3"
+                                y="3"
+                                width="18"
+                                height="18"
+                                rx="5" />
+
+                            <circle
+                                cx="12"
+                                cy="12"
+                                r="4" />
+
+                            <circle
+                                cx="17.5"
+                                cy="6.5"
+                                r="1"
+                                fill="currentColor"
+                                stroke="none" />
+
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT -->
+
+            <div class="footer-links">
+
+                <h4>
+                    Product
+                </h4>
+
+                <ul>
+
+                    <li>
+                        <a href="#features">
+                            AI Attendance
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#features">
+                            Smart Roster
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#tech">
+                            Tech Stack
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#student-journey">
+                            Student Portal
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- EXPERIENCE -->
+
+            <div class="footer-links">
+
+                <h4>
+                    Experience
+                </h4>
+
+                <ul>
+
+                    <li>
+                        <a href="#journey">
+                            Teacher Journey
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#student-journey">
+                            Student Journey
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#features">
+                            Voice ID
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#features">
+                            FaceID Scan
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- COMPANY -->
+
+            <div class="footer-links">
+
+                <h4>
+                    Company
+                </h4>
+
+                <ul>
+
+                    <li>
+                        <a href="#">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#journey">
+                            How it Works
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Terms of Use
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 PRESENX AI.
+                Built with AI for smarter attendance.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
 </body>
+
 </html>
